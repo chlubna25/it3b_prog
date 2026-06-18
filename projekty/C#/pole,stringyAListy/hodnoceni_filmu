@@ -1,0 +1,93 @@
+
+class Program
+{
+    static void Main()
+    {
+        List<string> nazvyFilmu = new List<string>();
+        List<int> hodnoceniFilmu = new List<int>();
+
+        while (true)
+        {
+            Console.WriteLine("\n--- DATABÁZE FILMŮ ---");
+            Console.WriteLine("1. Přidat film");
+            Console.WriteLine("2. Vypsat filmy (vyhledávání)");
+            Console.WriteLine("3. Průměrné hodnocení");
+            Console.WriteLine("4. Smazat film podle názvu");
+            Console.WriteLine("0. Konec");
+            Console.Write("Vyber akci: ");
+
+            string volba = Console.ReadLine();
+
+            if (volba == "1")
+            {
+                Console.Write("Název filmu: ");
+                string nazev = Console.ReadLine();
+                Console.Write("Hodnoceni (0-100): ");
+                int hodnoceni = int.Parse(Console.ReadLine());
+
+                nazvyFilmu.Add(nazev);
+                hodnoceniFilmu.Add(hodnoceni);
+                Console.WriteLine("Uloženo.");
+            }
+            else if (volba == "2")
+            {
+                Console.Write("Zadej text pro vyhledání v názvu: ");
+                string hledany = Console.ReadLine().ToLower();
+
+                Console.WriteLine("\nNalezené záznamy:");
+                for (int i = 0; i < nazvyFilmu.Count; i++)
+                {
+                    // Kontrola, zda název obsahuje hledaný text (ignore case)
+                    if (nazvyFilmu[i].ToLower().Contains(hledany))
+                    {
+                        Console.WriteLine($"- {nazvyFilmu[i]}: {hodnoceniFilmu[i]}%");
+                    }
+                }
+            }
+            else if (volba == "3")
+            {
+                if (hodnoceniFilmu.Count > 0)
+                {
+                    double soucet = 0;
+                    foreach (int h in hodnoceniFilmu)
+                    {
+                        soucet += h;
+                    }
+                    double prumer = soucet / hodnoceniFilmu.Count;
+                    Console.WriteLine($"Průměrné hodnocení všech filmů: {prumer}%");
+                }
+                else
+                {
+                    Console.WriteLine("Nemam žádná data.");
+                }
+            }
+            else if (volba == "4")
+            {
+                Console.Write("Zadej název filmu, který chceš smazat: ");
+                string smazat = Console.ReadLine();
+                
+                int index = nazvyFilmu.IndexOf(smazat);
+                if (index != -1)
+                {
+                    hodnoceniFilmu.RemoveAt(index);
+                    bool odstraneno = nazvyFilmu.Remove(smazat);
+                    Console.WriteLine("Odstraněno? " + odstraneno);
+                }
+
+                }
+                else
+                {
+                    Console.WriteLine("Film nenalezen.");
+                }
+            
+            else if (volba == "0")
+            {
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Zkus to znovu.");
+            }
+        }
+    }
+}

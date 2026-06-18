@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int obvod(int a) {
+    return 4 * a;
+}
+
+int main() {
+    int strana;
+
+    printf("Zadej delku strany: ");
+    scanf("%d", &strana);
+
+    printf("Obvod ctverce: %d\n", obvod(strana));
+    return 0;
+}
