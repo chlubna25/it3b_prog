@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+
+int main (){
+    float nahoda = ((float)rand()/(float)(RAND_MAX)) * 10;
+    float pole[10];
+    srand(time(NULL));
+    for (int i = 0; i < 10; i++){
+        pole[i] = ((float)rand()/(float)(RAND_MAX)) * 10;
+        printf("Pole[%d] = %.2f\n", i, pole[i]);
+    }
+    return 0;
+}

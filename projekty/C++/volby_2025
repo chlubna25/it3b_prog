@@ -1,0 +1,36 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL)); // Inicializace generátoru náhodných čísel aktuálním časem
+
+    const char *strany[] = {"ANO", "SPOLU", "SPD", "STAN", "Pirati", "Motoriste"}; // Pole názvů stran
+    int vysledky[6]; // Pole pro ukládání procentuálních výsledků stran
+    int pocetStran = 6; // Počet stran
+    int zbyvajiciProcenta = 100; // Celkový počet procent, které je třeba rozdělit
+
+    // Generování náhodných procent pro každou stranu kromě poslední
+    for (int i = 0; i < pocetStran - 1; i++) {
+        vysledky[i] = rand() % (zbyvajiciProcenta + 1); // Náhodné procento pro aktuální stranu
+        zbyvajiciProcenta -= vysledky[i]; // Odečtení přidělených procent
+    }
+    vysledky[pocetStran - 1] = zbyvajiciProcenta; // Zbytek procent přidělen poslední straně
+
+    // Výpis výsledků voleb
+    printf("Vysledky voleb 2025:\n");
+    for (int i = 0; i < pocetStran; i++) {
+        printf("%s: %d%%\n", strany[i], vysledky[i]); // Výpis názvu strany a jejích procent
+    }
+
+    // Určení vítěze voleb
+    int maxIndex = 0; // Index strany s nejvyšším počtem procent
+    for (int i = 1; i < pocetStran; i++) {
+        if (vysledky[i] > vysledky[maxIndex]) {
+            maxIndex = i; // Aktualizace indexu vítěze
+        }
+    }
+    printf("Vitez voleb: %s\n", strany[maxIndex]); // Výpis názvu vítězné strany
+
+    return 0;
+}

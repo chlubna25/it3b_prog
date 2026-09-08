@@ -1,0 +1,65 @@
+public class BankovniUcet
+{
+    //vytvareni hesla, zůstatku a historie
+    private string Heslo;
+    private double Zustatek;
+    public List<string> Historie { get; set; }
+
+    //moznosti pro manipulaci s účtem
+    public BankovniUcet(double pocatecniVklad, string noveHeslo)
+    {
+        //Vytvoření účtu s počátečním vkladem a nastavením hesla
+        Zustatek = pocatecniVklad;
+        Heslo = noveHeslo;
+        Historie = new List<string>();
+        Historie.Add($"Účet vytvořen s počátečním vkladem: {pocatecniVklad} Kč");
+    }
+    // Vklad
+    public void Vlozit(double castka)
+    { 
+        if (castka > 0)
+        {
+            Zustatek += castka;
+            Historie.Add($"Vklad: +{castka} Kč (Nový zůstatek: {Zustatek} Kč)");
+            Console.WriteLine("Peníze se vložili.");
+        }
+    }
+    // Výběr 
+    public void Vybrat(double castka, string zadaneHeslo)
+    {
+        if (zadaneHeslo == Heslo)
+        {
+            if (castka > 0 && castka <= Zustatek)
+            {
+                Zustatek -= castka;
+                Historie.Add($"Výběr: -{castka} Kč (Nový zůstatek: {Zustatek} Kč)");
+                Console.WriteLine("Výběr proběhl.");
+            }
+            else
+            {
+                Console.WriteLine("Malo penez na ucte!");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Spatne heslo");
+        }
+    }
+    //Vypis historie
+    public void VypisHistorii(string zadaneHeslo)
+    {
+        if (zadaneHeslo == Heslo)
+        {
+            Console.WriteLine("\n--- HISTORIE TRANSAKCÍ");
+            foreach (string zaznam in Historie)
+            {
+                Console.WriteLine(zaznam);
+            }
+            Console.WriteLine($"Aktuální zůstatek: {Zustatek} Kč");
+         }
+        else
+        {
+            Console.WriteLine("Spatne heslo!");
+        }
+    }
+}
