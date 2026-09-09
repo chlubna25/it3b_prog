@@ -1,0 +1,51 @@
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 46 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                        0.61 kB │ gzip:     0.39 kB
+dist/assets/barlow-condensed-vietnamese-400-normal-BHpO_q_4.woff       6.04 kB
+dist/assets/barlow-condensed-vietnamese-500-normal-CsrJDWc5.woff       6.04 kB
+dist/assets/barlow-condensed-vietnamese-600-normal-CNlPk46_.woff       6.08 kB
+dist/assets/barlow-vietnamese-400-normal-BFeobeCK.woff                 6.09 kB
+dist/assets/barlow-condensed-vietnamese-700-normal-DhIzd8Tb.woff       6.10 kB
+dist/assets/barlow-vietnamese-500-normal-GNfB7rCE.woff                 6.15 kB
+dist/assets/barlow-vietnamese-600-normal-CA_GiK2e.woff                 6.23 kB
+dist/assets/barlow-condensed-vietnamese-400-normal-Dq9fsqrz.woff2      7.50 kB
+dist/assets/barlow-condensed-vietnamese-500-normal-DjeaNLFD.woff2      7.52 kB
+dist/assets/barlow-vietnamese-400-normal-Dpl4UHAZ.woff2                7.59 kB
+dist/assets/barlow-condensed-vietnamese-700-normal-DYeBwlKR.woff2      7.64 kB
+dist/assets/barlow-vietnamese-500-normal-zTViEIzf.woff2                7.67 kB
+dist/assets/barlow-condensed-vietnamese-600-normal-A5AYRdjN.woff2      7.70 kB
+dist/assets/barlow-vietnamese-600-normal-DcjprdFV.woff2                7.90 kB
+dist/assets/barlow-condensed-latin-ext-400-normal-DN7qpd_C.woff       11.86 kB
+dist/assets/barlow-condensed-latin-ext-500-normal-B1RE8WP7.woff       11.86 kB
+dist/assets/barlow-condensed-latin-ext-600-normal-Clv9cIcR.woff       11.97 kB
+dist/assets/barlow-condensed-latin-ext-700-normal-BIHFfxf0.woff       11.99 kB
+dist/assets/barlow-latin-ext-400-normal-CvBsJvxq.woff                 12.31 kB
+dist/assets/barlow-latin-ext-500-normal-CJPcKP2Q.woff                 12.41 kB
+dist/assets/barlow-latin-ext-600-normal-DMVRjfRT.woff                 12.60 kB
+dist/assets/barlow-condensed-latin-ext-400-normal-DPMBkgfB.woff2      13.92 kB
+dist/assets/barlow-condensed-latin-ext-500-normal-yA5ONLQ9.woff2      14.18 kB
+dist/assets/barlow-latin-ext-400-normal-HxX4XjxC.woff2                14.27 kB
+dist/assets/barlow-latin-ext-500-normal-DOaysfXq.woff2                14.42 kB
+dist/assets/barlow-condensed-latin-ext-600-normal-18ESti3H.woff2      14.52 kB
+dist/assets/barlow-condensed-latin-ext-700-normal-CwuXbfVR.woff2      14.64 kB
+dist/assets/barlow-latin-ext-600-normal-B8NK_A3D.woff2                14.97 kB
+dist/assets/barlow-condensed-latin-400-normal-BXL2z6Kg.woff           18.52 kB
+dist/assets/barlow-condensed-latin-500-normal-HIEiP5Ov.woff           18.60 kB
+dist/assets/barlow-condensed-latin-700-normal-Dmwat-ge.woff           18.82 kB
+dist/assets/barlow-condensed-latin-600-normal-BFJEwTuo.woff           18.89 kB
+dist/assets/barlow-latin-500-normal-C1h8hMer.woff                     19.52 kB
+dist/assets/barlow-latin-400-normal-fsAxiSwU.woff                     19.58 kB
+dist/assets/barlow-latin-600-normal-CNwfPWQD.woff                     19.88 kB
+dist/assets/barlow-condensed-latin-400-normal-Dc2u_eUW.woff2          21.16 kB
+dist/assets/barlow-condensed-latin-500-normal-BgYH2mbd.woff2          21.42 kB
+dist/assets/barlow-latin-500-normal-BPAOfeC8.woff2                    22.01 kB
+dist/assets/barlow-latin-400-normal-qiz4-Cze.woff2                    22.20 kB
+dist/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2          22.31 kB
+dist/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2          22.44 kB
+dist/assets/barlow-latin-600-normal-DILqtrty.woff2                    22.77 kB
+dist/assets/index-Cm5vwSRb.css                                        58.36 kB │ gzip:    10.75 kB
+dist/assets/index-DgjyAa2b.js                                      2,911.55 kB │ gzip: 1,016.64 kB
+✓ built in 42.35s

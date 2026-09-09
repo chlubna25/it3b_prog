@@ -1,0 +1,1543 @@
+{
+  "results": [
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 0,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 90,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 180,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 180,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 180,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 270,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 45,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 8.537736462515939e-7
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 123,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": -60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 0,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyW"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyS"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ],
+      "angle": 0
+    },
+    {
+      "yaw": 247,
+      "pitch": 60,
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ],
+      "angle": 0
+    }
+  ],
+  "before": {
+    "controller": {
+      "x": 24,
+      "y": 4.125100002288819,
+      "z": 214
+    },
+    "world": [
+      24,
+      5.775100002288818,
+      214
+    ],
+    "local": [
+      24,
+      5.775100002288818,
+      214
+    ],
+    "quaternion": [
+      -0.0031249542247876075,
+      0,
+      0,
+      0.9999951173186262
+    ],
+    "yaw": 0,
+    "cameraYaw": 0,
+    "pitch": -0.00624991862169894,
+    "roll": 0,
+    "forward": [
+      0,
+      0,
+      -0.9999999999999999
+    ],
+    "movementForward": [
+      0,
+      0,
+      -0.9999999999999999
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "angle": 0,
+    "hierarchy": [
+      "PerspectiveCamera"
+    ],
+    "bodyRotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "horizontalEyeOffset": 0,
+    "fov": 58.71550708558255,
+    "aspect": 1.7777777777777777
+  },
+  "after": {
+    "controller": {
+      "x": 24.000028610229492,
+      "y": 4.125118598937989,
+      "z": 211.23532104492188
+    },
+    "world": [
+      24.000028610229492,
+      5.77511762046814,
+      211.2383038330078
+    ],
+    "local": [
+      24.000028610229492,
+      5.77511762046814,
+      211.2383038330078
+    ],
+    "quaternion": [
+      -0.0031249542247876075,
+      0,
+      0,
+      0.9999951173186262
+    ],
+    "yaw": 0,
+    "cameraYaw": 0,
+    "pitch": -0.00624991862169894,
+    "roll": 0,
+    "forward": [
+      0,
+      0,
+      -0.9999999999999999
+    ],
+    "movementForward": [
+      0,
+      0,
+      -0.9999999999999999
+    ],
+    "velocity": [
+      0,
+      0,
+      -3.3143424242237067
+    ],
+    "angle": 0,
+    "hierarchy": [
+      "PerspectiveCamera"
+    ],
+    "bodyRotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "horizontalEyeOffset": 0.0029827880859158995,
+    "fov": 58.71550708558255,
+    "aspect": 1.7777777777777777
+  },
+  "errors": []
+}
