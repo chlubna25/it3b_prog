@@ -1,0 +1,73 @@
+PASS New Game
+PASS W movement
+PASS Jump leaves ground
+PASS LMB gathering delivers resource after impact
+PASS Empty inventory
+PASS Pickup empty slot
+PASS Compatible stack exactly max
+PASS Overflow occupies next slot
+PASS Full inventory preserves rejected items
+PASS Partial insertion full inventory
+PASS Even split
+PASS Odd split
+PASS Split one conserves item
+PASS Drop full stack
+PASS Pickup dropped stack
+PASS World drop survives full pickup
+PASS DOM merge capped at stack max
+PASS DOM swap unlike items
+PASS Inventory to belt
+PASS Belt occupied swap
+PASS Belt to inventory
+PASS DOM Shift split
+PASS Close inventory during drag clears drag styling
+PASS Craft button queues selected recipe
+PASS Pause from inventory
+PASS Insufficient craft atomic
+PASS Exact ingredients
+PASS Exact craft delivered
+PASS Multiple queue
+PASS Moving ingredients with queue
+PASS Full queue finish retains output
+PASS Blocked output delivered once
+BASE {"foundation":9,"wall":23,"doorway":1,"door":1,"floor":9,"roof":9} []
+PASS 3x3 foundations
+PASS Complete upper floor including center
+PASS Two external wall levels
+PASS Door and roof
+PASS No failed intended placements
+PASS Exact structure transforms/open state after reload
+PASS Exact inventory arrangement after reload
+PASS Active slot persists
+PASS Craft queue survives reload
+PASS Door toggles after reload
+PASS New socket attachment after reload
+PASS Ground floor collider after reload
+PASS Upper floor collider after reload
+PASS Wall blocks physical movement after reload
+PASS Restored collider structure-2
+PASS Restored collider structure-3
+PASS Restored collider structure-4
+PASS Restored collider structure-5
+PASS Restored collider structure-6
+PASS Restored collider structure-7
+PASS Restored collider structure-8
+PASS Restored collider structure-9
+PASS Restored collider structure-10
+PASS Restored collider structure-24
+PASS Restored collider structure-25
+PASS Restored collider structure-26
+PASS Restored collider structure-27
+PASS Restored collider structure-28
+PASS Restored collider structure-29
+PASS Restored collider structure-30
+PASS Restored collider structure-31
+PASS Restored collider structure-32
+PASS Closed restored door blocks player
+PASS E opens restored door
+PASS Open restored door permits passage
+PRESET LOW { fps: 58.956832937407114, drawCalls: 123, triangles: 1506088 }
+PRESET MEDIUM { fps: 58.21806422356945, drawCalls: 351, triangles: 2256248 }
+PRESET HIGH { fps: 59.93286619072793, drawCalls: 364, triangles: 2875820 }
+CONSOLE ERRORS []
+PASS No application console errors

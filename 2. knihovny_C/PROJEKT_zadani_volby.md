@@ -7,7 +7,7 @@ Zkusme vytvořit program, simulující volby do Poslanecké sněmovny 2025.
 1. Měj pole s názvy alespoň 6 politických stran, např.:
 
 ```c
-{ "ANO", "SPOLU", "SPD", "STAN", "Piráti", "Motoristé", "Stačilo", "Jiné" }
+{ "ANO", "SPOLU", "SPD", "STAN", "Piráti", "Motoristé", "Stačilo", "Cibulka.net-pravý blok" }
 ```
 <br>
 
