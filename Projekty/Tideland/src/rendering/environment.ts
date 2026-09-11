@@ -222,16 +222,19 @@ export class Environment {
   coverGrass(structures:Structure[]):void {
     for(const structure of structures){
       if(structure.pieceType!=='foundation'||this.grassCoveredBy.has(structure.id))continue;
-      this.grassCoveredBy.add(structure.id);const p=structure.position,c=Math.cos(structure.rotation),s=Math.sin(structure.rotation);
-      for(const chunk of this.grassChunks){
-        if(Math.abs(chunk.center.x-p.x)>24||Math.abs(chunk.center.z-p.z)>24)continue;
-        let changed=false;
-        for(let i=0;i<chunk.fullCount;i++){
-          chunk.mesh.getMatrixAt(i,this.matrixDummy.matrix);const e=this.matrixDummy.matrix.elements,dx=e[12]!-p.x,dz=e[14]!-p.z;
-          if(Math.abs(dx*c-dz*s)<1.58&&Math.abs(dx*s+dz*c)<1.58){chunk.mesh.setMatrixAt(i,this.hiddenMatrix);changed=true;}
-        }
-        if(changed)chunk.mesh.instanceMatrix.needsUpdate=true;
+      this.coverArea(structure.id,structure.position,3.16,3.16,structure.rotation);
+    }
+  }
+  coverArea(id:string,p:{x:number;z:number},width:number,depth:number,rotation=0):void {
+    if(this.grassCoveredBy.has(id))return;this.grassCoveredBy.add(id);const c=Math.cos(rotation),s=Math.sin(rotation);
+    for(const chunk of this.grassChunks){
+      if(Math.abs(chunk.center.x-p.x)>24||Math.abs(chunk.center.z-p.z)>24)continue;
+      let changed=false;
+      for(let i=0;i<chunk.fullCount;i++){
+        chunk.mesh.getMatrixAt(i,this.matrixDummy.matrix);const e=this.matrixDummy.matrix.elements,dx=e[12]!-p.x,dz=e[14]!-p.z;
+        if(Math.abs(dx*c-dz*s)<width/2&&Math.abs(dx*s+dz*c)<depth/2){chunk.mesh.setMatrixAt(i,this.hiddenMatrix);changed=true;}
       }
+      if(changed)chunk.mesh.instanceMatrix.needsUpdate=true;
     }
   }
   dispose():void {

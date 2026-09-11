@@ -41,3 +41,10 @@ if Chrome is not installed at the default macOS application path.
 Settings use horizontal FOV at a 16:9 reference aspect, 60–100 degrees (default 90). The renderer converts this to Three.js vertical FOV and preserves vertical coverage when resizing; ultrawide displays show more on the sides. Existing numeric preferences now follow this convention. Changes apply live and persist. Sprint adds a smooth 2-degree offset. Held items use a separate fixed 50-degree vertical camera, so world FOV does not stretch them.
 
 Run `node scripts/camera-fov-qa.mjs` with the Vite server running for camera/persistence/aspect regression checks. Open `artifacts/camera-fov/index.html` for exact-pose screenshot comparisons.
+
+
+## Version
+
+Current release: **0.2.0 / EA-02** (2026-09-11).
+
+Development history is tracked in [`CHANGELOG.md`](./CHANGELOG.md) and is also visible from the in-game **HISTORY** menu.
