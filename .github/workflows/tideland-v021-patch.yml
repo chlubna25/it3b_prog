@@ -31,7 +31,7 @@ jobs:
           end=next(i for i,line in enumerate(lines[start:],start) if line=="write('src/ui/UI.ts',ui)")
           replacement=[
             "start=ui.index('      <section class=\"screen settings-screen\"')",
-            "end=ui.index('      <section class=\"screen dead-screen\"',start)",
+            "end=ui.index('      <section class=\"screen dead-screen modal-screen\"',start)",
             "ui=ui[:start]+settings_section+'\\n\\n'+ui[end:]",
             "write('src/ui/UI.ts',ui)",
           ]
