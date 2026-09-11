@@ -22,7 +22,22 @@ jobs:
           fetch-depth: 0
 
       - name: Apply source patch
-        run: python3 Projekty/Tideland/scripts/patch-v021.py
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('Projekty/Tideland/scripts/patch-v021.py')
+          lines=p.read_text().splitlines()
+          start=next(i for i,line in enumerate(lines) if line.startswith('ui,count=re.subn('))
+          end=next(i for i,line in enumerate(lines[start:],start) if line=="write('src/ui/UI.ts',ui)")
+          replacement=[
+            "start=ui.index('      <section class=\"screen settings-screen\"')",
+            "end=ui.index('      <section class=\"screen dead-screen\"',start)",
+            "ui=ui[:start]+settings_section+'\\n\\n'+ui[end:]",
+            "write('src/ui/UI.ts',ui)",
+          ]
+          p.write_text('\n'.join(lines[:start]+replacement+lines[end+1:])+'\n')
+          PY
+          python3 Projekty/Tideland/scripts/patch-v021.py
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
