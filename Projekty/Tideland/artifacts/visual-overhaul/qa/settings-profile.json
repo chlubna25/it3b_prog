@@ -1,0 +1,24 @@
+{
+  "settingsPersisted": {
+    "fov": 90,
+    "sensitivity": 1.4,
+    "masterVolume": 0.35,
+    "effectsVolume": 0.45
+  },
+  "presetPersisted": "medium",
+  "fullInventoryButtonVerified": true,
+  "scene": {
+    "position": {
+      "x": -141.08245988283306,
+      "y": 10.232161669750631,
+      "z": -36.63454290572554
+    },
+    "nearbyTrees": 40
+  },
+  "stats": {
+    "fps": 59.80557110191929,
+    "drawCalls": 223,
+    "triangles": 2747592
+  },
+  "errors": []
+}
