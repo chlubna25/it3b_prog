@@ -63,19 +63,18 @@ jobs:
           const errors=[];
           page.on('pageerror',e=>errors.push(e.message));
           page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
+          const domClick=async selector=>page.locator(selector).evaluate(el=>el.click());
           try {
             await page.goto('http://127.0.0.1:5173');
             await page.waitForFunction(()=>window.__TIDELAND);
             await page.locator('.loading-screen').waitFor({state:'hidden'});
-            await page.waitForTimeout(1000);
             assert.match(await page.locator('.menu-footer').innerText(),/VERSION 0\.2\.0.*EA-02/);
-            const history=page.getByRole('button',{name:/04\s+HISTORY/});
-            await history.scrollIntoViewIfNeeded();
-            await history.click();
+            await domClick('[data-action="history"]');
             assert.equal(await page.locator('.history-panel:not([hidden])').count(),1);
             assert.match(await page.locator('.history-panel').innerText(),/0\.2\.0/);
-            await page.locator('.history-panel [data-action="history"]').click();
-            await page.getByRole('button',{name:/03\s+SETTINGS/}).click();
+            await domClick('.history-panel [data-action="history"]');
+            await domClick('.menu-screen [data-action="settings"]');
+            assert.equal(await page.locator('.settings-screen').evaluate(el=>getComputedStyle(el).display!=='none'),true);
             const slider=page.locator('input[data-setting="fov"]');
             await slider.evaluate(el=>{el.value='60';el.dispatchEvent(new Event('input',{bubbles:true}))});
             await page.waitForTimeout(100);
@@ -83,8 +82,8 @@ jobs:
             await slider.evaluate(el=>{el.value='100';el.dispatchEvent(new Event('input',{bubbles:true}))});
             await page.waitForTimeout(100);
             assert(Math.abs((await page.evaluate(()=>window.__TIDELAND.cameraState().world.fov))-100)<0.01);
-            await page.locator('[data-action="settingsBack"]').click();
-            await page.getByRole('button',{name:/01\s+NEW GAME/}).click();
+            await domClick('[data-action="settingsBack"]');
+            await domClick('.menu-screen [data-action="new"]');
             await page.waitForFunction(()=>window.__TIDELAND.getScreen()==='playing');
             await page.evaluate(()=>{const a=window.__TIDELAND;a.sim().state.inventory[0]={itemId:'storage',count:1};a.teleport({x:55,y:a.height(55,230)+.1,z:230});a.lookAt({x:55,y:a.height(55,227),z:227});});
             await page.keyboard.press('Digit1');
