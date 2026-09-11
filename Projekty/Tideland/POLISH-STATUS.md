@@ -142,3 +142,14 @@ Save version remains 1. Existing saves are accepted; small floor-surface height 
 `npm run dev`, then open the printed URL (normally http://localhost:5173).
 
 Run browser checks while the dev server is active. The scripts default to macOS Google Chrome; set `CHROME_BIN` to another installed Chrome executable if needed. They create isolated browser storage and do not modify the player's regular browser save.
+
+
+# Tideland — v0.2.0 reconciliation, 2026-09-11
+
+- Reconciled the remaining useful local Codex work with the GitHub `main` branch.
+- Completed station placement/collision, maintenance-panel and dev-terminal lifecycle work from the unfinished local copy.
+- Local camera/movement regressions, absolute Pages asset paths and `.npmrc` cache behavior were deliberately not restored.
+- Direct vertical FOV behavior restored at 60–100 degrees; yaw-based movement remains the source of truth.
+- Added explicit game version/history UI and `CHANGELOG.md`.
+- Added broader QA for version/history, FOV and station placement.
+- Release target: `0.2.0` / `EA-02`.
