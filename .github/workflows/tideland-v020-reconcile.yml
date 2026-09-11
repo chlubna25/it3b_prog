@@ -66,8 +66,12 @@ jobs:
           try {
             await page.goto('http://127.0.0.1:5173');
             await page.waitForFunction(()=>window.__TIDELAND);
+            await page.locator('.loading-screen').waitFor({state:'hidden'});
+            await page.waitForTimeout(1000);
             assert.match(await page.locator('.menu-footer').innerText(),/VERSION 0\.2\.0.*EA-02/);
-            await page.getByRole('button',{name:/04\s+HISTORY/}).click();
+            const history=page.getByRole('button',{name:/04\s+HISTORY/});
+            await history.scrollIntoViewIfNeeded();
+            await history.click();
             assert.equal(await page.locator('.history-panel:not([hidden])').count(),1);
             assert.match(await page.locator('.history-panel').innerText(),/0\.2\.0/);
             await page.locator('.history-panel [data-action="history"]').click();
