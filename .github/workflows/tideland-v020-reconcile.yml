@@ -69,7 +69,7 @@ jobs:
             await page.waitForFunction(()=>window.__TIDELAND);
             await page.locator('.loading-screen').waitFor({state:'hidden'});
             assert.match(await page.locator('.menu-footer').innerText(),/VERSION 0\.2\.0.*EA-02/);
-            await domClick('[data-action="history"]');
+            await domClick('.menu-screen [data-action="history"]');
             assert.equal(await page.locator('.history-panel:not([hidden])').count(),1);
             assert.match(await page.locator('.history-panel').innerText(),/0\.2\.0/);
             await domClick('.history-panel [data-action="history"]');
