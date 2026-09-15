@@ -5,7 +5,7 @@ int main() {
 	/*
 	CHYBNY PROGRAM
 	Zkus spustit tento kod a zadat na vstupu
-	 stringy o delce vetsi nez 4.
+	stringy o delce vetsi nez 4.
 	*/
 	
 	char string1[50];

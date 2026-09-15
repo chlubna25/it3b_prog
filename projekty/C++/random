@@ -1,0 +1,14 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL)); // Inicializace generátoru náhodných čísel aktuálním časem
+
+    // Generování náhodného čísla
+    int randomNumber = rand() % 100; // Náhodné číslo mezi 0 a 99
+
+    printf("Náhodné číslo: %d\n", randomNumber); // Výpis náhodného čísla
+
+    return 0;
+}

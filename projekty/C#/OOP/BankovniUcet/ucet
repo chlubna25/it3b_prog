@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+
+public class BankovniUcet
+{
+    private string Heslo;
+    private double Zustatek;
+    public List<double> Historie { get; set; }
+
+    public BankovniUcet(double pocatecniVklad, string noveHeslo)
+    {
+        Zustatek = pocatecniVklad;
+        Heslo = noveHeslo;
+        Historie = new List<double> { pocatecniVklad };
+    }
+
+    public void Vlozit(double castka)
+    {
+        if (castka > 0)
+        {
+            Zustatek += castka;
+            Historie.Add(castka);
+            Console.WriteLine($"Vloženo: {castka} Kč");
+        }
+    }
+
+    public void Vybrat(double castka, string zadaneHeslo)
+    {
+        if (zadaneHeslo == Heslo)
+        {
+            if (castka > 0 && castka <= Zustatek)
+            {
+                Zustatek -= castka;
+                Historie.Add(-castka);
+                Console.WriteLine($"Vybráno: {castka} Kč");
+            }
+            else
+            {
+                Console.WriteLine("Nedostatečný zůstatek!");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Spatne heslo! Výběr zamítnut.");
+        }
+    }
+
+    public void VypisHistorii(string zadaneHeslo)
+    {
+        if (zadaneHeslo == Heslo)
+        {
+            Console.WriteLine("\n    Historie transakcí");
+            foreach (double transakce in Historie)
+            {
+                Console.WriteLine(transakce > 0 ? $"Příjem: +{transakce} Kč" : $"Výdej: {transakce} Kč");
+            }
+            Console.WriteLine($"Zustatek je: {Zustatek} Kč");
+        }
+        else
+        {
+            Console.WriteLine("Spatne heslo");
+        }
+    }
+}

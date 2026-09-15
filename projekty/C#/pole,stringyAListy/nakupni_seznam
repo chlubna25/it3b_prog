@@ -1,0 +1,97 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<string> items = new List<string>();
+        List<double> prices = new List<double>();
+
+        while (true)
+        {
+            Console.WriteLine("\n--- SHOPPING LIST ---");
+            Console.WriteLine("1) Add item and price");
+            Console.WriteLine("2) Show list");
+            Console.WriteLine("3) Remove item");
+            Console.WriteLine("4) Sort list by price ascending");
+            Console.WriteLine("0) Total and exit");
+            Console.Write("Your choice: ");
+
+            string choice = Console.ReadLine();
+
+            if (choice == "1")
+            {
+                Console.Write("Enter item name: ");
+                string name = Console.ReadLine();
+                Console.Write("Enter price (use comma, e.g. 0,5): ");
+                double price = double.Parse(Console.ReadLine());
+
+                items.Add(name);
+                prices.Add(price);
+            }
+
+            else if (choice == "2")
+            {
+                Console.WriteLine("\nOn the list:");
+                for (int i = 0; i < items.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {items[i]} - {prices[i]:F2} USD");
+                }
+            }
+
+            else if (choice == "3")
+            {
+                Console.Write("Enter the name of the item to delete: ");
+                string toRemove = Console.ReadLine();
+
+                int index = items.IndexOf(toRemove);
+                if (index != -1)
+                {
+                    prices.RemoveAt(index);
+                    items.RemoveAt(index);
+                    Console.WriteLine("Item removed.");
+                }
+            }
+
+            else if (choice == "4")
+            {
+                for (int i = 0; i < prices.Count - 1; i++)
+                {
+                    int minIndex = i;
+                    for (int j = i + 1; j < prices.Count; j++)
+                    {
+                        if (prices[j] < prices[minIndex])
+                        {
+                            minIndex = j;
+                        }
+                    }
+                    double tempPrice = prices[minIndex];
+                    prices[minIndex] = prices[i];
+                    prices[i] = tempPrice;
+
+                    string tempName = items[minIndex];
+                    items[minIndex] = items[i];
+                    items[i] = tempName;
+                }
+                Console.WriteLine("List sorted.");
+            }
+
+            else if (choice == "0")
+            {
+                Console.WriteLine("\nFinal list:");
+                double sum = 0;
+                for (int i = 0; i < items.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {items[i]} - {prices[i]:F2} USD");
+                    sum += prices[i];
+                }
+                Console.WriteLine($"Total price: {sum:F2} USD");
+                break;
+            }
+        }
+
+        Console.WriteLine("\nPress any key to exit...");
+        Console.ReadKey();
+    }
+}

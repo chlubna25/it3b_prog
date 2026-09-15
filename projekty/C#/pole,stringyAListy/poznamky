@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic; 
+
+class Program
+{
+    static void Main()
+    {
+        List<string> Poznamky = new List<string>();
+
+        while (true)
+        {
+            Console.WriteLine("\n   Poznamkovy blok   ");
+            
+            Console.WriteLine("1 - Pridat poznamku");
+            Console.WriteLine("2 - Vypsat vsechny");
+            Console.WriteLine("0 - Konec");
+            Console.Write("Vyber si: ");
+            
+            string volba = Console.ReadLine();
+
+            if (volba == "1")
+            {
+                Console.Write("Napis text: ");
+                string text = Console.ReadLine();
+                Poznamky.Add(text);
+                Console.WriteLine("Poznamka ulozena.");
+            }
+            else if (volba == "2")
+            {
+                Console.WriteLine("\n   Vsechny poznamky   ");
+                
+                foreach (string poznamka in Poznamky)
+                {
+                    Console.WriteLine("- " + poznamka);
+                    
+                }
+            }
+            else if (volba == "0")
+            {
+                break; 
+            }
+                
+        }
+    }
+}

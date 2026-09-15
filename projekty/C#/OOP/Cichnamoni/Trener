@@ -1,0 +1,44 @@
+class Trener
+{
+    private string jmeno;
+    private Cichnamon aktualni;
+    private int lvl;
+
+    // vraci jmeno trenera
+    public string VratJmeno()
+    {
+        return this.jmeno;
+    }
+
+    // vraci vybraneho cichnamona
+    public Cichnamon VratAktualni()
+    {
+        return this.aktualni;
+    }
+
+    // vraci uroven trenera
+    public int VratLvl()
+    {
+        return this.lvl;
+    }
+
+    // meni cichnamona
+    public void NastavAktualni(Cichnamon aktualni)
+    {
+        this.aktualni = aktualni;
+    }
+
+    // zmeni uroven trenera
+    public void NastavLvl(int lvl)
+    {
+        this.lvl = lvl;
+    }
+
+    // vytvori noveho trenera
+    public Trener(string jmeno, Cichnamon aktualni)
+    {
+        this.jmeno = jmeno;
+        this.aktualni = aktualni;
+        this.lvl = 1; // kazdy zacina na lvl 1
+    }
+}

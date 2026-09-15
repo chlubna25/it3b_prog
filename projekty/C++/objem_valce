@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+float objem(float r, float v) {
+    return 3.14159f * r * r * v;
+}
+
+int main() {
+    float r, v;
+
+    printf("Zadej polomer a vysku (v cm): ");
+    scanf("%f %f", &r, &v);
+
+    printf("Objem valce: %.2f cm^3\n", objem(r, v));
+    return 0;
+}

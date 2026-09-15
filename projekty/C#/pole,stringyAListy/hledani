@@ -1,0 +1,27 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        string[] slova = { "chleba", "pocitac", "klavesnice", "mobil", "mys", "Google", "jidlo" };
+
+        Console.Write("Zadej slovo: ");
+        string hledanyText = Console.ReadLine();
+
+        bool nalezeno = false;
+
+        foreach (string slovo in slova)
+        {
+            if (slovo.ToLower().Contains(hledanyText.ToLower()))
+            {
+                Console.WriteLine("Nalezeno: " + slovo);
+                nalezeno = true;
+            }
+        }
+
+        if (!nalezeno)
+        {
+            Console.WriteLine("Nic nenalezeno.");
+        }
+    }
+}
