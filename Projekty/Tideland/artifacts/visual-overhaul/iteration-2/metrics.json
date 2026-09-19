@@ -1,0 +1,35 @@
+{
+  "stats": {
+    "grassland": {
+      "fps": 59.75505090951395,
+      "drawCalls": 241,
+      "triangles": 2810288
+    },
+    "ground": {
+      "fps": 60.005567713667,
+      "drawCalls": 189,
+      "triangles": 2778328
+    },
+    "coast": {
+      "fps": 59.99687852463105,
+      "drawCalls": 63,
+      "triangles": 2636512
+    },
+    "beach": {
+      "fps": 59.99523215886587,
+      "drawCalls": 72,
+      "triangles": 2647948
+    },
+    "upland": {
+      "fps": 60.00216154032028,
+      "drawCalls": 211,
+      "triangles": 2680272
+    },
+    "forest": {
+      "fps": 60.00156500057408,
+      "drawCalls": 130,
+      "triangles": 2774348
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "Distinct station placement",
+    "DOM storage drag transfer",
+    "Independent storage and spawn point restored",
+    "Map waypoint input"
+  ],
+  "errors": [],
+  "stations": 8,
+  "stats": {
+    "fps": 58.30733778343859,
+    "drawCalls": 268,
+    "triangles": 2741800
+  }
+}
