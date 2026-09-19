@@ -1,0 +1,80 @@
+{
+  "stats": {
+    "grassland": {
+      "fps": 59.78228097772433,
+      "drawCalls": 243,
+      "triangles": 2864364
+    },
+    "ground": {
+      "fps": 59.99985307107741,
+      "drawCalls": 191,
+      "triangles": 2832556
+    },
+    "coast": {
+      "fps": 60.010433358639716,
+      "drawCalls": 65,
+      "triangles": 2690964
+    },
+    "beach": {
+      "fps": 60.00342829001827,
+      "drawCalls": 74,
+      "triangles": 2702800
+    },
+    "upland": {
+      "fps": 60.0074135928416,
+      "drawCalls": 211,
+      "triangles": 2734336
+    },
+    "forest": {
+      "fps": 60.00963194568167,
+      "drawCalls": 131,
+      "triangles": 2828612
+    },
+    "coastline-daytime": {
+      "fps": 60.00835075564221,
+      "drawCalls": 81,
+      "triangles": 2726276
+    },
+    "beach-close-up": {
+      "fps": 60.00401370186398,
+      "drawCalls": 75,
+      "triangles": 2722072
+    },
+    "ocean-close-up": {
+      "fps": 60.00391568633121,
+      "drawCalls": 72,
+      "triangles": 2700588
+    },
+    "ocean-horizon": {
+      "fps": 60.004493845167225,
+      "drawCalls": 72,
+      "triangles": 2700588
+    },
+    "forest-edge": {
+      "fps": 59.990657535128676,
+      "drawCalls": 238,
+      "triangles": 2796612
+    },
+    "tree-close-up": {
+      "fps": 60.00387769934265,
+      "drawCalls": 147,
+      "triangles": 2778108
+    },
+    "rock-close-up": {
+      "fps": 59.993631046174684,
+      "drawCalls": 239,
+      "triangles": 2844688
+    },
+    "rocky-upland": {
+      "fps": 60.00297759861421,
+      "drawCalls": 168,
+      "triangles": 2711016
+    },
+    "high-overview": {
+      "fps": 59.908799388975304,
+      "drawCalls": 242,
+      "triangles": 2860908
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,15 @@
+npm notice run tideland-survival@0.1.0 test
+npm notice run vitest run
+
+ RUN  v3.2.7 /Users/romansvora/Documents/Rust 
+
+ ✓ tests/camera-projection.test.ts (3 tests) 2ms
+ ✓ tests/structure-renderer.test.ts (2 tests) 21ms
+ ✓ tests/simulation.test.ts (25 tests) 8ms
+ ✓ tests/terrain-generation.test.ts (2 tests) 178ms
+
+ Test Files  4 passed (4)
+      Tests  32 passed (32)
+   Start at  14:26:32
+   Duration  510ms (transform 242ms, setup 0ms, collect 427ms, tests 208ms, environment 0ms, prepare 258ms)
+

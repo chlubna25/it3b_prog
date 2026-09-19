@@ -1,8 +1,5 @@
-# README
-Tento README slouží jako ukázka (a návod) k využití gitu.
-
----
-
+💡 Tento repozitář slouží hlavně pro **školní projekty a trénink v jazyce C**.
+=======
 
 ## 0. Před začátkem – založení účtu
 1. Otevři [https://github.com](https://github.com).
@@ -101,3 +98,4 @@ Tímto nastavení můžeš stahovat změny z učitelského repozitáře do svéh
    - pomocí šipky nahoru (*push*) nahraj změny do repozitáře na cloudu
 
 ---
+>>>>>>> 0890156a7d6d336930ad350a6b65183aaac211c1
