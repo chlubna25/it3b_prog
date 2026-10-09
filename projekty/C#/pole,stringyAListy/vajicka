@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        char[] vajicka = { 'r', 'g', 'b' };
+        List<char> vysluzka = new List<char>();
+        bool pokracovat = true; 
+
+        while (pokracovat)
+        {
+            Console.WriteLine("\n--- VELIKONOČNÍ KOŠÍK ---");
+            Console.WriteLine("1) Pridej vajicko");
+            Console.WriteLine("2) Vypis sebrana vajicka");
+            Console.WriteLine("3) Vypis pocet vajec");
+            Console.WriteLine("0) KONEC"); 
+            Console.Write("Vyber akci: ");
+
+            int volba = int.Parse(Console.ReadLine());
+
+            if (volba == 1)
+            {
+                Console.Write("Zadej barvu vajicka [r, g, b]: ");
+                string vstup = Console.ReadLine();
+                if (vstup.Length > 0)
+                {
+                    char barva = vstup[0];
+                    if ("rgb".Contains(barva.ToString()))
+                    {
+                        vysluzka.Add(barva);
+                        Console.WriteLine("Vajíčko přidáno");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Neplatná barva: ");
+                    }
+                }
+            }
+            else if (volba == 2)
+            {
+                Console.Write("Máš: ");
+                foreach (char v in vysluzka)
+                {
+                    Console.Write(v + " ");
+                }
+                Console.WriteLine();
+            }
+            else if (volba == 3)
+            {
+                Console.WriteLine("Počet vajíček: " + vysluzka.Count);
+            }
+            else if (volba == 0)
+            {
+                Console.WriteLine("Konec programu");
+                pokracovat = false; 
+            }
+            else
+            {
+                Console.WriteLine("Neplatná operace!");
+            }
+        }
+    }
+}

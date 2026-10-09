@@ -1,0 +1,12 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL)); // Inicializace generátoru náhodných čísel aktuálním časem
+
+    int randomNumber = (rand() % 6) + 1; // Náhodné číslo mezi 1 a 6 (hod kostkou)
+    printf("Padlo číslo: %d\n", randomNumber); // Výpis výsledku hodu kostkou
+
+    return 0;
+}

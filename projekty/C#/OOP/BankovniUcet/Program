@@ -1,0 +1,64 @@
+class Program
+{
+    //simulace Bankovniho uctu
+    static void Main()
+    {
+        Console.WriteLine("=== Bankovni Ucet ");
+
+        // Vytvoření hesla 
+        Console.Write("Zadej heslo pro svůj nový účet: ");
+        string uzivatelskeHeslo = Console.ReadLine();
+
+        BankovniUcet mujUcet = new BankovniUcet(0, uzivatelskeHeslo);
+
+        bool pokracovat = true;
+        while (pokracovat)
+        {
+            Console.WriteLine("\nCo chcete udělat?");
+            Console.WriteLine("1 - Vložit peníze");
+            Console.WriteLine("2 - Vybrat peníze");
+            Console.WriteLine("3 - Vypsat historii");
+            Console.WriteLine("0 - Ukončit program");
+            Console.Write("Volba: ");
+
+            string volba = Console.ReadLine();
+
+            switch (volba)
+            {
+                // Vložení peněz
+                case "1":
+                    Console.Write("Zadejte částku vkladu: ");
+                    if (double.TryParse(Console.ReadLine(), out double vklad))
+                    {
+                        mujUcet.Vlozit(vklad);
+                    }
+                    break;
+                // Výběr peněz
+                case "2":
+                    Console.Write("Zadejte částku k výběru: ");
+                    if (double.TryParse(Console.ReadLine(), out double vybery))
+                    {
+                        Console.Write("Zadejte heslo: ");
+                        string h1 = Console.ReadLine();
+                        mujUcet.Vybrat(vybery, h1);
+                    }
+                    break;
+                // Zobrazení historie
+                case "3":
+                    Console.Write("Zadejte heslo pro zobrazení historie: ");
+                    string h2 = Console.ReadLine();
+                    mujUcet.VypisHistorii(h2);
+                    break;
+                // Ukončení programu
+                case "0":
+                    pokracovat = false;
+                    Console.WriteLine("Ukončuji!");
+                    break;
+                // Neplatná volba
+                default:
+                    Console.WriteLine("Neplatná volba.");
+                    break;
+            }
+        }
+    }
+}

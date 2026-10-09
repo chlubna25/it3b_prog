@@ -1,0 +1,7 @@
+class Oddeleni
+{
+    public string mistnost { get; set; }
+    public string VrchniSestra { get; set; }
+    
+    
+}

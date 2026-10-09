@@ -1,0 +1,119 @@
+using System;
+
+class Program
+{
+    // Zakladni Utok
+    static void ZakladniUtok(Cichnamon utocnik, Cichnamon obet, Random nahoda)
+    {
+        int zivotyObeti = obet.VratHp();
+        int maxDmg = zivotyObeti / 3;
+        if (maxDmg < 1) maxDmg = 1;
+
+        int finalDmg = nahoda.Next(1, maxDmg + 1);
+        obet.NastavHp(zivotyObeti - finalDmg);
+
+        Console.WriteLine(utocnik.VratJmeno() + " pouzil " + utocnik.VratZakladniUtok().VratNazev() + " a dal " + finalDmg + " dmg.");
+    }
+
+    // specialni utok
+    static void SpecialniUtok(Cichnamon utocnik, Cichnamon obet, Random nahoda)
+    {
+        int zivotyObeti = obet.VratHp();
+        int minDmg = zivotyObeti / 3;
+        int maxDmg = zivotyObeti / 2;
+        if (maxDmg <= minDmg) maxDmg = minDmg + 1;
+
+        int finalDmg = nahoda.Next(minDmg, maxDmg + 1);
+        obet.NastavHp(zivotyObeti - finalDmg);
+
+        Console.WriteLine(utocnik.VratJmeno() + " vyvolal " + utocnik.VratSpecialniUtok().VratNazev() + " a dal " + finalDmg + " dmg.");
+    }
+
+    // Heal
+    static void Heal(Cichnamon cichnamon, Random nahoda)
+    {
+        int aktualniHp = cichnamon.VratHp();
+        int hodnotaHealu = (aktualniHp * 30) / 100;
+        if (hodnotaHealu < 1) hodnotaHealu = 1;
+
+        int noveHp = aktualniHp + hodnotaHealu;
+        if (noveHp > cichnamon.VratMaxHp()) noveHp = cichnamon.VratMaxHp();
+
+        cichnamon.NastavHp(noveHp);
+        Console.WriteLine(cichnamon.VratJmeno() + " se vylecil o " + hodnotaHealu + " HP.");
+    }
+
+    // Vypis informaci o Cichnamonovi
+    static void VypisStav(Cichnamon cichnamon)
+    {
+        int aktualniHp = cichnamon.VratHp();
+        if (aktualniHp < 0) aktualniHp = 0;
+        Console.WriteLine(cichnamon.VratJmeno() + ": " + aktualniHp + " HP");
+    }
+
+    static void Main()
+    {
+        Random nahoda = new Random();
+
+        Utok ember = new Utok("Ember");
+        Utok blastBurn = new Utok("Blast Burn");
+        Utok waterGun = new Utok("Water Gun");
+        Utok hydroPump = new Utok("Hydro Pump");
+        Utok thunderShock = new Utok("Thunder Shock");
+        Utok thunderbolt = new Utok("Thunderbolt");
+
+        Cichnamon[] nabidka = new Cichnamon[2];
+        nabidka[0] = new Cichnamon("Charizard", 40, ember, blastBurn);
+        nabidka[1] = new Cichnamon("Blastoise", 45, waterGun, hydroPump);
+
+        Cichnamon enemyCichnamon = new Cichnamon("Pikachu", 35, thunderShock, thunderbolt);
+
+        Console.WriteLine("VYBER SI SVEHO CICHNAMONA:\n1 - " + nabidka[0].VratJmeno() + "\n2 - " + nabidka[1].VratJmeno());
+        Console.Write("Zadej cislo: ");
+        string volba = Console.ReadLine();
+
+        Cichnamon hracuvCichnamon = (volba == "1") ? nabidka[0] : nabidka[1];
+
+        Trener hrac = new Trener("Hrac", hracuvCichnamon);
+        Trener oponent = new Trener("Pocitac", enemyCichnamon);
+
+        Console.WriteLine("\nZacina souboj");
+        Cichnamon hracuvAktualni = hrac.VratAktualni();
+        Cichnamon oponentuvAktualni = oponent.VratAktualni();
+
+        VypisStav(hracuvAktualni);
+        VypisStav(oponentuvAktualni);
+        Console.WriteLine("----------------------------------------");
+
+        while (hracuvAktualni.VratHp() > 0 && oponentuvAktualni.VratHp() > 0)
+        {
+            Console.Write("\nVyber si:\n1 - Zakladni utok\n2 - Specialni utok\n3 - Heal\nVyber akci: ");
+            string akce = Console.ReadLine();
+            Console.WriteLine();
+
+            if (akce == "1") ZakladniUtok(hracuvAktualni, oponentuvAktualni, nahoda);
+            else if (akce == "2") SpecialniUtok(hracuvAktualni, oponentuvAktualni, nahoda);
+            else Heal(hracuvAktualni, nahoda);
+
+            VypisStav(oponentuvAktualni);
+
+            if (oponentuvAktualni.VratHp() > 0)
+            {
+                Console.WriteLine("\nsouper hraje ");
+                if (nahoda.Next(1, 3) == 1) ZakladniUtok(oponentuvAktualni, hracuvAktualni, nahoda);
+                else SpecialniUtok(oponentuvAktualni, hracuvAktualni, nahoda);
+
+                VypisStav(hracuvAktualni);
+            }
+            Console.WriteLine("\n----------------------------------------");
+        }
+
+        Console.WriteLine("\n KONEC HRY ");
+
+        if (oponentuvAktualni.VratHp() <= 0)
+        {
+            hrac.NastavLvl(hrac.VratLvl() + 1);
+            Console.WriteLine(hrac.VratJmeno() + " ziskal lvl! Aktualni lvl: " + hrac.VratLvl());
+        }
+    }
+}

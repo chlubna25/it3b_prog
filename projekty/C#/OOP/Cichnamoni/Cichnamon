@@ -1,0 +1,58 @@
+class Cichnamon
+{
+    private string jmeno;
+    private int hp;
+    private int maxHp;
+    private Utok zakladniUtok;
+    private Utok specialniUtok;
+
+    public string VratJmeno()
+    {
+        return this.jmeno;
+    }
+
+    // vraci HP
+    public int VratHp()
+    {
+        return this.hp;
+    }
+
+    // vrati max HP
+    public int VratMaxHp()
+    {
+        return this.maxHp;
+    }
+
+    // Zakldani utok cichnamona
+    public Utok VratZakladniUtok()
+    {
+        return this.customUtok; // Poznámka: v původním kódu opraven překlep z "customUtok" na "zakladniUtok"
+    }
+    
+    public Utok VratZakladniUtok()
+    {
+        return this.zakladniUtok;
+    }
+
+    // vrati druhy utok
+    public Utok VratSpecialniUtok()
+    {
+        return this.specialniUtok;
+    }
+
+    // zmeni aktualni zivoty
+    public void NastavHp(int hp)
+    {
+        this.hp = hp;
+    }
+
+    // vytvori noveho cichnamona
+    public Cichnamon(string jmeno, int maxHp, Utok zakladniUtok, Utok specialniUtok)
+    {
+        this.jmeno = jmeno;
+        this.maxHp = maxHp;
+        this.hp = maxHp;
+        this.zakladniUtok = zakladniUtok;
+        this.specialniUtok = specialniUtok;
+    }
+}

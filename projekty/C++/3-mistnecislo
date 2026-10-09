@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int cislo;
+while(1){
+        printf("napis mi 3 mistne cislo a sude cislo\n");
+        scanf("%d", &cislo);
+
+        if (cislo >= 100 && cislo < 1000 && cislo % 2 == 0){
+            printf("spravne cislo\n");
+            break;
+        } else {
+            printf("spatne cislo, napis ho znovu\n");
+        }
+    }
+    return 0; 
+}
