@@ -1,0 +1,9 @@
+{
+  "note": "Rollup rendered module lengths before final chunk minification; not transfer sizes.",
+  "bytes": {
+    "rapier": 2237075,
+    "three": 1397408,
+    "application": 181484,
+    "other": 1168
+  }
+}

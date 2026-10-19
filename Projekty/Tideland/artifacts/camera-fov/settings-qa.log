@@ -1,0 +1,13 @@
+{
+  settings: 'PASS',
+  capacityButton: 'PASS',
+  scene: {
+    position: {
+      x: -141.08245988283306,
+      y: 10.232161669750631,
+      z: -36.63454290572554
+    },
+    nearbyTrees: 40
+  },
+  stats: { fps: 59.83473201245921, drawCalls: 192, triangles: 2736800 }
+}
