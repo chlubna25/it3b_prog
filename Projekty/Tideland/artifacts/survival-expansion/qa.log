@@ -1,0 +1,10 @@
+errors []
+{
+  checks: [
+    'Distinct station placement',
+    'DOM storage drag transfer',
+    'Independent storage and spawn point restored',
+    'Map waypoint input'
+  ],
+  errors: []
+}
