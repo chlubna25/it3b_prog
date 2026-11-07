@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int mocnina(int x) {
+    return x * x * x;
+}
+
+int main() {
+    int a;
+
+    printf("Zadej cele cislo: ");
+    scanf("%d", &a);
+
+    printf("Treti mocnina: %d\n", mocnina(a));
+    return 0;
+}
