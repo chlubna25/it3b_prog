@@ -1,0 +1,30 @@
+class Program
+{
+    static void Main(){
+    
+    try {
+        Console.WriteLine(" Zadej cenu skupinoveho listku");
+        int cena = int.Parse(Console.ReadLine());
+        
+        Console.WriteLine(" Zadej pocet osob");
+        int pocetOsob = int.Parse(Console.ReadLine());        
+    }
+
+    catch (FormatException){
+        Console.WriteLine("Musis zadat cislo");
+     
+    }
+
+    try{
+        int cenaZaJednoho = cena / pocetOsob;
+    }
+
+    catch (DivideByZeroException){
+        Console.WriteLine("Nelze delit nulou");
+     
+       }
+        return cenaZaJednoho;
+
+    }
+
+}
