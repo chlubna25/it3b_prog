@@ -1,0 +1,90 @@
+public class Zasilka
+
+{
+    public string Nazev {get; set;}
+    public int PocetPolozek {get; set;}
+    public bool Odeslano {get; set;}
+
+    public Zasilka(string nazev, int pocetPolozek)
+    {
+        Nazev = nazev;
+        PocetPolozek = pocetPolozek;
+        Odeslano = false;
+    }
+
+    public virtual double CasOdeslani() //virtual jde prepsat pomoci override
+    {
+        return PocetPolozek * 1.5;
+    }
+
+    public void Odesli()
+    {
+        Odeslano = true;
+    }
+}
+//--------------------------------------------------------------------------------
+public class KrehkaZasilka : Zasilka
+{
+    public KrehkaZasilka(string nazev, int Pocetpolozek) : base(nazev, Pocetpolozek)
+    {
+    }
+    public override double CasOdeslani()
+    {
+        return PocetPolozek * 2.0;
+    }
+}
+//--------------------------------------------------------------------------------
+public class ChlazenaZasilka : Zasilka
+{
+    public ChlazenaZasilka(string nazev, int Pocetpolozek) : base(nazev, Pocetpolozek)
+    {
+    }
+    public override double CasOdeslani()
+    {
+        return (PocetPolozek * 1.0) + 5.0;
+    }
+}
+//--------------------------------------------------------------------------------
+public class ExpedicniCentrum
+{
+    public double ZbyvajiciCas {get; set;}
+    public List<Zasilka> SeznamZasilek {get; set;}
+
+    public ExpedicniCentrum(double ZbyvajiciCas)
+    {
+        ZbyvajiciCas = zbyvajiciCas;
+        SeznamZasilek = new List<Zasilka>();
+    }
+
+    public void Prijmi(Zasilka zasilka)
+    {
+        SeznamZasilek.Add(zasilka);
+    }
+
+    public void Prijmi(string nazev, int PocetPolozek)
+    {
+        SeznamZasilek.Add(new Zasilka(nazev, pocetPolozek));
+    }
+
+    public void SpustMenu()
+    {
+        foreach (Zasilka zasilka in SeznamZasilek)
+        {
+            if(zasilka.Odeslano)
+            {
+                continue;
+            }
+
+            double potrebnyCas = zasilka.CasOdeslani();
+
+            if(potrebnCas <= ZbyvajiciCas)
+            {
+                ZbyvajiciCas -= potrebnyCas;
+                zasilka.Odesli();
+                Console.WriteLine($"Odeslano: {zasilka.Nazev} ({potrebnyCas} min)");
+            }
+        }
+        Console.WriteLine($"Zbyvajici cas: {ZbyvajiciCas} min");
+    }
+}
+

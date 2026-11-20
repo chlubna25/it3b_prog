@@ -1,0 +1,24 @@
+class Sestra
+{
+    public string Jmeno { get; set; }
+    private int Plat;
+    public string Oddeleni { get; set; }
+
+
+    public Sestra(int plat, string jmeno)
+    {
+        Jmeno = jmeno;
+        Plat = plat;
+        Oddeleni = null;
+    }
+    public static void ZvysPlat(Plat plat)
+    {
+        plat += castka;
+        return plat;
+    }
+    public static void SnizPlat(Plat plat)
+    {
+        plat -= castka;
+        return plat;
+    }
+}

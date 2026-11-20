@@ -1,0 +1,91 @@
+public class Dokument
+{
+    public string Nazev { get; set; }
+    public int PocetStran { get; set; }
+    public bool Digitalizovan { get; set; }
+
+    public Dokument(string nazev, int pocetStran)
+    {
+        Nazev = nazev;
+        PocetStran = pocetStran;
+        Digitalizovan = false;
+    }
+
+    public virtual double OdhadMinut()
+    {
+        return PocetStran * 1.5;
+    }
+
+    public void Digitalizuj()
+    {
+        Digitalizovan = true;
+    }
+}
+//--------------------------------------------------------------------------------
+public class VazanaKniha : Dokument
+{
+    public VazanaKniha(string nazev, int pocetStran) : base(nazev, pocetStran)
+    {
+    }
+
+    public override double OdhadMinut()
+    {
+        return PocetStran * 2.0;
+    }
+}
+//--------------------------------------------------------------------------------
+public class VolneListy : Dokument
+{
+    public VolneListy(string nazev, int pocetStran) : base(nazev, pocetStran)
+    {
+    }
+
+    public override double OdhadMinut()
+    {
+        return (PocetStran * 1.0) + 5.0;
+    }
+}
+//--------------------------------------------------------------------------------
+public class DigitalizacniLinka
+{
+    public double ZbyvajiciCas { get; set; }
+    public List<Dokument> SeznamDokumentu { get; set; }
+
+    public DigitalizacniLinka(double zbyvajiciCas)
+    {
+        ZbyvajiciCas = zbyvajiciCas;
+        SeznamDokumentu = new List<Dokument>();
+    }
+
+    public void Zarad(Dokument dokument)
+    {
+        SeznamDokumentu.Add(dokument);
+    }
+
+    public void Zarad(string nazev, int pocetStran)
+    {
+        SeznamDokumentu.Add(new Dokument(nazev, pocetStran));
+    }
+
+    public void SpustDavku()
+    {
+        foreach (Dokument dokument in SeznamDokumentu)
+        {
+            if (dokument.Digitalizovan)
+            {
+                continue;
+            }
+
+            double potrebnyCas = dokument.OdhadMinut();
+
+            if (potrebnyCas <= ZbyvajiciCas)
+            {
+                ZbyvajiciCas -= potrebnyCas;
+                dokument.Digitalizuj();
+                Console.WriteLine($"Digitalizovano: {dokument.Nazev} ({potrebnyCas} min)");
+            }
+        }
+
+        Console.WriteLine($"Zbyvajici cas: {ZbyvajiciCas} min");
+    }
+}

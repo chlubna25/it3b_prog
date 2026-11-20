@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+float soucetCtvercu(float a, float b) {
+    return a * a + b * b;
+}
+
+int main() {
+    float a, b;
+
+    printf("Zadej a a b: ");
+    scanf("%f %f", &a, &b);
+
+    printf("c^2 je %.2f\n", soucetCtvercu(a, b));
+    return 0;
+}

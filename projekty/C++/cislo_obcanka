@@ -1,0 +1,25 @@
+// generování rodného čísla z data narození, pohlaví a koncovky
+#include <stdio.h>
+
+int main() {
+    int den, mesic, rok, koncovka;
+    char pohlavi[10];
+
+    printf("Zadejte datum narozeni (den, mesic, rok):\n");
+        scanf("%d.%d.%d", &den, &mesic, &rok);
+
+    printf("Zadejte pohlavi (Muz/Zena):\n");
+        scanf("%s", pohlavi);
+
+    printf("Zadejte koncovku rodneho cisla:\n");
+        scanf("%d", &koncovka);
+
+    if (pohlavi[0] == 'Z' || pohlavi[0] == 'z') {
+        mesic += 50; // +50 pro ženy
+    }
+
+    // Výstup
+    printf("Rodne cislo: %02d%02d%02d/%04d\n", rok % 100, mesic, den, koncovka);
+
+    return 0;
+}

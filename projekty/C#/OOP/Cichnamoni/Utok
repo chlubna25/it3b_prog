@@ -1,0 +1,16 @@
+class Utok
+{
+    private string nazev;
+
+    // vrati nazev utoku
+    public string VratNazev()
+    {
+        return this.nazev;
+    }
+
+    // vytvori novy utok
+    public Utok(string nazev)
+    {
+        this.nazev = nazev;
+    }
+}

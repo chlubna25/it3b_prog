@@ -1,0 +1,59 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+    int penize = 1000; // Počáteční peníze hráče
+    int sazka;
+    int volba; // Volba uživatele (0 = panna, 1 = orel)
+    int pokracovat; // Proměnná pro rozhodnutí o pokračování
+
+    printf("Vitejte ve hre! Mate %d penez.\n", penize);
+
+    while (penize > 0) {
+        printf("Kolik chcete vsadit? (Mate %d penez)\n", penize);
+        scanf("%d", &sazka);
+
+        if (sazka > penize || sazka <= 0) {
+            printf("Neplatna sazka. Zkuste znovu.\n");
+            continue;
+        }
+
+        printf("Hadejte, co padne (0 = panna, 1 = orel):\n");
+        scanf("%d", &volba);
+
+        if (volba != 0 && volba != 1) {
+            printf("Neplatna volba. Zkuste znovu.\n");
+            continue;
+        }
+
+        printf("Hazim minci...\n");
+        srand(time(NULL)); // Inicializace generátoru náhodných čísel aktuálním časem
+
+        int minci = (rand() % 2); // Náhodné číslo mezi 0 a 1 (0 = panna, 1 = orel)
+        if (minci == volba) {
+            printf("Gratulujeme! Uhadli jste. Vyhral jste %d penez!\n", sazka);
+            penize += sazka;
+        } else {
+            printf("Bohuzel, neuhodli jste. Prohral jste %d penez.\n", sazka);
+            penize -= sazka;
+        }
+
+        printf("Zbyvajici penize: %d\n", penize);
+
+        if (penize <= 0) {
+            printf("Nemate zadne penize. Konec hry.\n");
+            break;
+        }
+
+        printf("Chcete pokracovat? (1 = ano, 0 = ne):\n");
+        scanf("%d", &pokracovat);
+
+        if (pokracovat == 0) {
+            printf("Konec hry. Zbyvajici penize: %d\n", penize);
+            break;
+        }
+    }
+
+    return 0;
+}
